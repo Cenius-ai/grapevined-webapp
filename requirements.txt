@@ -1,0 +1,11 @@
+# Grapevined runtime dependencies: none.
+#
+# The whole tool is one file (grapevined.py) that imports only the Python
+# standard library: argparse, datetime, hashlib, hmac, json, math, os, re,
+# secrets, sys. It therefore runs on a bare CPython 3.9+ with no install step,
+# no third-party package and no network access.
+#
+# Installing this (empty) file is still the documented step so the install is
+# reproducible and so a future runtime dependency has an obvious home.
+#
+# Test-only dependencies live in requirements-dev.txt.

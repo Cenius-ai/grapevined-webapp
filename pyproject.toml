@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "grapevined"
+version = "1.0.0"
+description = "Vineyard block, yield, ripeness and trellis tracker - one local JSON store, one passphrase, standard library only."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+keywords = ["vineyard", "cli", "harvest", "yield", "ripeness", "trellis"]
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest==8.3.3"]
+
+[project.scripts]
+grapevined = "grapevined:main"
+
+[tool.setuptools]
+py-modules = ["grapevined"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

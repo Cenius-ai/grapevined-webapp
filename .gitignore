@@ -1,0 +1,16 @@
+# Local data: one operator's store. Never shared, never committed.
+grapevined.json
+grapevined.json.*.tmp
+
+# Local environment file (copy .env.example instead).
+.env
+
+# Python build and cache artefacts.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
