@@ -1,0 +1,2 @@
+# Test-only dependencies. The application itself has no third-party packages.
+pytest==8.3.3
